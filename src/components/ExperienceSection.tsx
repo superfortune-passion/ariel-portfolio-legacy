@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import FadeIn from "@/components/FadeIn";
 import { experiences } from "@/data/portfolio";
 import ProjectCard from "@/components/ProjectCard";
 
@@ -7,7 +8,7 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-16 max-w-2xl">
+        <FadeIn className="mb-16 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
             Professional experience
           </p>
@@ -18,11 +19,12 @@ export default function ExperienceSection() {
             From banking and healthcare to enterprise AI — each role with
             hands-on work samples showcasing the systems I helped deliver.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="space-y-24">
           {experiences.map((job, index) => (
-            <article key={job.id} id={job.id} className="scroll-mt-24">
+            <FadeIn key={job.id} delay={index * 80}>
+            <article id={job.id} className="scroll-mt-24">
               <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                 <div className="flex items-start gap-4">
                   <div
@@ -94,6 +96,7 @@ export default function ExperienceSection() {
                 <hr className="mt-24 border-white/6" />
               )}
             </article>
+            </FadeIn>
           ))}
         </div>
       </div>

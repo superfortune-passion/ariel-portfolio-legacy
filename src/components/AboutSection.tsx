@@ -1,3 +1,4 @@
+import FadeIn from "@/components/FadeIn";
 import { profile } from "@/data/portfolio";
 
 export default function AboutSection() {
@@ -5,6 +6,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <FadeIn>
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
               About me
@@ -13,6 +15,8 @@ export default function AboutSection() {
               Engineering leader at the intersection of AI and product
             </h2>
           </div>
+          </FadeIn>
+          <FadeIn delay={120}>
           <div className="space-y-4 leading-relaxed text-slate-400">
             <p>{profile.summary}</p>
             <p>
@@ -22,6 +26,7 @@ export default function AboutSection() {
               healthcare privacy, and high-scale SaaS delivery.
             </p>
           </div>
+          </FadeIn>
         </div>
       </div>
     </section>

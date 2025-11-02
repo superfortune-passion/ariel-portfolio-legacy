@@ -12,26 +12,41 @@ export default function Hero() {
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
       <div className="pointer-events-none absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-500/20 blur-3xl" />
       <div className="mx-auto max-w-6xl px-6">
-        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-slate-300">
+        <p
+          className="animate-fade-in mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-slate-300 hover-glow"
+          style={{ animationDelay: "0ms" }}
+        >
           <span className="h-2 w-2 rounded-full bg-emerald-400" />
           Open to opportunities · {profile.location}
         </p>
 
-        <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
+        <h1
+          className="animate-fade-in max-w-4xl text-balance text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl"
+          style={{ animationDelay: "120ms" }}
+        >
           <span className="text-gradient">{profile.name}</span>
         </h1>
 
-        <p className="mt-6 max-w-2xl text-xl text-slate-400 md:text-2xl">
+        <p
+          className="animate-fade-in mt-6 max-w-2xl text-xl text-slate-400 md:text-2xl"
+          style={{ animationDelay: "220ms" }}
+        >
           {profile.title}
           <span className="text-blue-400"> — </span>
           {profile.subtitle}
         </p>
 
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-400 md:text-lg">
+        <p
+          className="animate-fade-in mt-6 max-w-2xl text-base leading-relaxed text-slate-400 md:text-lg"
+          style={{ animationDelay: "320ms" }}
+        >
           {profile.summary}
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div
+          className="animate-fade-in mt-10 flex flex-wrap gap-4"
+          style={{ animationDelay: "420ms" }}
+        >
           <a href="#experience" className="btn-primary">
             View my work
           </a>
@@ -45,9 +60,12 @@ export default function Hero() {
           </a>
         </div>
 
-        <dl className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
+        <dl
+          className="animate-fade-in mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4"
+          style={{ animationDelay: "520ms" }}
+        >
           {stats.map((stat) => (
-            <div key={stat.label} className="card-stat">
+            <div key={stat.label} className="card-stat hover-glow">
               <dt className="text-xs text-slate-500">{stat.label}</dt>
               <dd className="mt-1 text-2xl font-bold text-white">{stat.value}</dd>
             </div>
