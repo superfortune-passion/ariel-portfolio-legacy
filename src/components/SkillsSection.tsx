@@ -14,7 +14,7 @@ export default function SkillsSection() {
           Soft Skills
         </h2>
         <p className="mt-4 max-w-2xl text-slate-400">
-          Strong communication, leadership, and collaboration skills focused on delivering scalable products and high-impact solutions."
+          Strong communication, leadership, and collaboration skills focused on delivering scalable products and high-impact solutions.
         </p>
         </FadeIn>
         <ul className="mt-10 flex flex-wrap gap-3">
