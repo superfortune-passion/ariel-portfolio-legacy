@@ -13,6 +13,9 @@ export default function SkillsSection() {
         <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
           Soft Skills
         </h2>
+        <p className="mt-4 max-w-2xl text-slate-400">
+          Strong communication, leadership, and collaboration skills focused on delivering scalable products and high-impact solutions."
+        </p>
         </FadeIn>
         <ul className="mt-10 flex flex-wrap gap-3">
           {softskills.map((softskills, index) => (
@@ -22,7 +25,7 @@ export default function SkillsSection() {
           ))}
         </ul>
       <FadeIn>
-        <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
+        <h2 style = {{marginTop: 50px}} className="mt-3 text-3xl font-bold text-white md:text-4xl">
           Tools & technologies
         </h2>
         <p className="mt-4 max-w-2xl text-slate-400">
