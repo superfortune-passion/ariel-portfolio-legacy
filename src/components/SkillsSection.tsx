@@ -2,6 +2,7 @@ import FadeIn from "@/components/FadeIn";
 import { skills } from "@/data/portfolio";
 
 export default function SkillsSection() {
+  const softskills = ["Communication", "Ownership", "Product Thinking", "Collaboration", "Execution"]
   return (
     <section id="skills" className="border-y border-white/6 bg-[var(--surface)] py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
@@ -9,6 +10,18 @@ export default function SkillsSection() {
         <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
           Technical skills
         </p>
+        <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
+          Soft Skills
+        </h2>
+        </FadeIn>
+        <ul className="mt-10 flex flex-wrap gap-3">
+          {softskills.map((softskills, index) => (
+            <FadeIn key={softskills} delay={index * 40} className="contents">
+              <li className="skill-pill">{softskills}</li>
+            </FadeIn>
+          ))}
+        </ul>
+      <FadeIn>
         <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
           Tools & technologies
         </h2>
