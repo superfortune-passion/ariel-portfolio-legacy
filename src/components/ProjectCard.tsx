@@ -56,7 +56,7 @@ export default function ProjectCard({
         <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-400">
           {description}
         </p>
-        <div className="card-project-footer">
+        {/* <div className="card-project-footer">
           <div className="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
               <span key={tag} className="tag-pill">
@@ -67,7 +67,7 @@ export default function ProjectCard({
           <span className="card-project-arrow shrink-0" aria-hidden>
             →
           </span>
-        </div>
+        </div> */}
       </div>
     </article>
   );
