@@ -25,7 +25,7 @@ export default function SkillsSection() {
           ))}
         </ul>
       <FadeIn>
-        <h2 style = {{marginTop: 50px}} className="mt-3 text-3xl font-bold text-white md:text-4xl">
+        <h2 className="mt-53 text-3xl font-bold text-white md:text-4xl">
           Tools & technologies
         </h2>
         <p className="mt-4 max-w-2xl text-slate-400">
