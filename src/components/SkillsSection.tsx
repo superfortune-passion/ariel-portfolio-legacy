@@ -25,9 +25,14 @@ export default function SkillsSection() {
           ))}
         </ul>
       <FadeIn>
-        <h2 className="mt-53 text-3xl font-bold text-white md:text-4xl">
+        {/* <h2 className="mt-53 text-3xl font-bold text-white md:text-4xl">
           Tools & technologies
-        </h2>
+        </h2> */}
+        <h2
+  className="mt-[50px] text-3xl font-bold text-white md:text-4xl"
+>
+  Tools & technologies
+</h2>
         <p className="mt-4 max-w-2xl text-slate-400">
           Full stack development, cloud infrastructure, and AI/ML integration
           across enterprise and regulated industries.
