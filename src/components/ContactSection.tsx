@@ -25,7 +25,7 @@ export default function ContactSection() {
               href={`tel:${profile.phone.replace(/\s/g, "")}`}
               className="btn-secondary inline-flex items-center justify-center"
             >
-              WhatsApp Number{profile.phone}
+              WhatsApp: {profile.phone}
             </a>
             <a
               href={profile.linkedin}
